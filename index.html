@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imagenes/favicon.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="code.js"></script>
+		<title>Challenge ONE - Encriptador</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="imagenes/Logo.png" alt="Logo de Alura">
+			</div>
+		</header>
+
+		<main>
+			<div class="section">
+				<div class="izquierda">
+					<textarea type="text" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+				</div>
+
+				<div class="texto-advertencia">
+					<img id="advertencia" src="imagenes/icono.png" alt="Advertencia">
+					<p id="soloLetras">Solo letras minúsculas y sin acentos</p>
+				</div>
+				<div class="botones">
+					<button id="encriptar-boton" onclick= "encriptacion()">Encriptar</button>
+					<button id="desencriptar-boton" onclick="desencriptacion()">Desencriptar</button>
+				</div>
+
+				<div class="derecha">
+					<img id="img-secreto" src="imagenes/Muñeco.png" alt="Secreto">
+					<p id="texto">Ningún mensaje fue encontrado</p>
+					<textarea id="texto2" name="name" rows="5" cols="25">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+					<span id="portapapeles">Copiado al portapapeles</span>
+					<button id="copiar" onclick="copiar()">Copiar</button>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p class="footer-text">&copy Carolina D'Angelo para Alura One Education</p>
+			<a href="https://www.linkedin.com/in/carolina-d-angelo/"><img class="icono" src="imagenes/Icono-In.png" alt="LinkedIn"></a>
+			<a href="https://github.com/CarolinaDangelo"><img class="icono" src="imagenes/Icono-Git.png" alt="GitHub"></a>
+		</footer>
+	</body>
+</html>
